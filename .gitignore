@@ -173,3 +173,5 @@ cython_debug/
 .vscode/
 .venv/
 tmp/
+data/examples/pdf_samples/
+

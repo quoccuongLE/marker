@@ -9,6 +9,8 @@ dependencies:
   - pytorch::pytorch=2.2.2
   - pytorch::torchvision=0.17.2
   - pytorch::pytorch-cuda=12.1
+  - conda-forge::huggingface_hub
+  - conda-forge::opencv
   - conda-forge::python-dotenv
   - conda-forge::scikit-learn
   - conda-forge::pillow
@@ -18,7 +20,7 @@ dependencies:
   - conda-forge::ftfy
   - conda-forge::texify
   - conda-forge::rapidfuzz
-  # - conda-forge::surya-ocr
+  - conda-forge::surya-ocr
   - conda-forge::filetype
   - conda-forge::regex
   - conda-forge::pdftext
