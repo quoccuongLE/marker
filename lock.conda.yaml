@@ -1,4 +1,4 @@
-name: marker
+name: /media/oracle/workspace/marker/.venv/marker
 channels:
   - pytorch
   - nvidia
@@ -63,6 +63,7 @@ dependencies:
   - fontconfig=2.14.2=h14ed4e7_0
   - fonts-anaconda=1=h8fa9717_0
   - fonts-conda-ecosystem=1=hd3eb1b0_0
+  - freeglut=3.4.0=h6a678d5_0
   - freetype=2.12.1=h267a509_2
   - fribidi=1.0.10=h7b6447c_0
   - frozenlist=1.4.0=py310h5eee18b_0
@@ -76,10 +77,13 @@ dependencies:
   - graphite2=1.3.14=h295c915_1
   - grpcio=1.62.2=py310h1b8f574_0
   - harfbuzz=9.0.0=hda332d3_1
-  - huggingface_hub=0.23.1=py310h06a4308_0
+  - hdf5=1.14.3=nompi_hdf9ad27_105
+  - huggingface_hub=0.24.0=pyhd8ed1ab_0
   - icu=75.1=he02047a_0
   - idna=3.7=py310h06a4308_0
+  - imath=3.1.11=hfc55251_0
   - intel-openmp=2022.0.1=h06a4308_3633
+  - jasper=4.2.4=h536e39c_0
   - jinja2=3.1.4=py310h06a4308_0
   - joblib=1.4.2=py310h06a4308_0
   - keyutils=1.6.1=h166bdaf_0
@@ -89,10 +93,12 @@ dependencies:
   - ld_impl_linux-64=2.38=h1181459_1
   - lerc=4.0.0=h27087fc_0
   - libabseil=20240116.2=cxx17_h6a678d5_0
+  - libaec=1.1.3=h59595ed_0
   - libarrow=17.0.0=h34456a7_0_cpu
   - libarrow-acero=17.0.0=he02047a_0_cpu
   - libarrow-dataset=17.0.0=he02047a_0_cpu
   - libarrow-substrait=17.0.0=hc9a23c6_0_cpu
+  - libasprintf=0.22.5=h661eb56_2
   - libass=0.17.1=h39113c1_2
   - libblas=3.9.0=16_linux64_mkl
   - libbrotlicommon=1.1.0=hd590300_1
@@ -115,9 +121,11 @@ dependencies:
   - libexpat=2.6.2=h59595ed_0
   - libffi=3.4.4=h6a678d5_1
   - libgcc-ng=14.1.0=h77fa898_0
+  - libgettextpo=0.22.5=h59595ed_2
   - libgfortran-ng=14.1.0=h69a702a_0
   - libgfortran5=14.1.0=hc5f4f2c_0
   - libglib=2.80.3=h8a4344b_1
+  - libglu=9.0.0=hf484d3e_1
   - libgomp=14.1.0=h77fa898_0
   - libgoogle-cloud=2.26.0=h26d7fe4_0
   - libgoogle-cloud-storage=2.26.0=ha262f82_0
@@ -127,11 +135,13 @@ dependencies:
   - libidn2=2.3.4=h5eee18b_0
   - libjpeg-turbo=3.0.3=h5eee18b_0
   - liblapack=3.9.0=16_linux64_mkl
+  - liblapacke=3.9.0=16_linux64_mkl
   - libnghttp2=1.58.0=h47da74e_1
   - libnpp=12.0.2.50=0
   - libnsl=2.0.1=hd590300_0
   - libnvjitlink=12.1.105=hd3aeb46_0
   - libnvjpeg=12.1.1.14=0
+  - libopencv=4.10.0=headless_py310h8d94708_2
   - libopenvino=2024.2.0=h2da1b83_1
   - libopenvino-auto-batch-plugin=2024.2.0=hb045406_1
   - libopenvino-auto-plugin=2024.2.0=hb045406_1
@@ -182,6 +192,8 @@ dependencies:
   - numexpr=2.8.3=mkl_py310h0afd4a5_1
   - numpy=1.26.4=py310hb13e2d6_0
   - ocl-icd=2.3.2=h5eee18b_1
+  - opencv=4.10.0=headless_py310h18fe71b_2
+  - openexr=3.2.2=haf962dd_1
   - openh264=2.4.1=h59595ed_0
   - openjpeg=2.5.2=h488ebb8_0
   - openssl=3.3.1=h4bc722e_2
@@ -196,6 +208,7 @@ dependencies:
   - pixman=0.43.2=h59595ed_0
   - pthread-stubs=0.3=h0ce48e5_1
   - pugixml=1.14=h59595ed_0
+  - py-opencv=4.10.0=headless_py310h59be988_2
   - pyarrow=17.0.0=py310hb7f781d_0
   - pyarrow-core=17.0.0=py310hda9dd24_0_cpu
   - pydantic=2.8.2=pyhd8ed1ab_0
@@ -267,4 +280,8 @@ dependencies:
   - yarl=1.9.3=py310h5eee18b_0
   - zlib=1.3.1=h4ab18f5_1
   - zstd=1.5.6=ha6fb4c9_0
+  - pip:
+      - fire==0.6.0
+      - surya-ocr==0.4.15
+      - termcolor==2.4.0
 prefix: .venv/marker
